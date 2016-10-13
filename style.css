@@ -14,11 +14,10 @@ button.accordion {
   outline: none;
   transition: 0.5s; }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-  background-color: #4DCDE3; }
+button.accordion.active {
+  background-color: #4DCDE3;
+  max-height: 500px; }
 
-/* Style the accordion panel. Note: hidden by default */
 div.panel {
   padding: 0 18px;
   background-color: white;
@@ -26,6 +25,14 @@ div.panel {
   overflow: hidden;
   transition: 0.5s ease; }
 
-/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
-div.panel.show {
+div.panel.active {
   max-height: 500px; }
+
+div.button.active {
+  max-height: 500px; }
+
+button.active {
+  max-height: 500px; }
+
+button:hover {
+  background: #4DCDE3; }
